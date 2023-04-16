@@ -1,23 +1,18 @@
 export const config: Config = {
-    title: "Hikari Homepage",
-    description: "Homepage powered by vue 3 && nuxt 3.",
-    keywords: "homepage, vue, nuxt",
+    title: "HikariLan 贺兰星辰的个人主页",
+    description: "HikariLan 贺兰星辰的个人主页",
+    keywords: "贺兰星辰,HikariLan,shaokeyibb,贺兰兰,minecraft.kim",
     background: {
         // @See: https://developer.mozilla.org/en-US/docs/Web/CSS/background
         color: {
-            type: "linear-gradient",
-            value: "#f12711, #f5af19"
-        },
-        // @See: https://developer.mozilla.org/en-US/docs/Web/CSS/filter
-        filter: {
-            opacity: "80%",
-            blur: "10px"
+            type: "url",
+            value: "https://www.loliapi.com/acg/"
         }
     },
     panel: {
         filter: {
-            blur: "20px",
-            contrast: "1.5"
+            blur: "3px",
+            contrast: "1.2"
         },
         shadow: {
             offsetX: "0",
@@ -27,7 +22,7 @@ export const config: Config = {
         }
     },
     theme: {
-        primaryColor: "#00b894",
+        primaryColor: "rgba(0,184,148,0.7)",
         secondaryColor: "#f5af19",
         surfaceColor: "rgba(255,255,255,0.3)",
         onSurfaceTextColor: "#000",
@@ -39,22 +34,44 @@ export const config: Config = {
     borderRadius: '10px',
     avatar: {
         type: "url",
-        value: "/icon.png"
+        value: "https://my.minecraft.kim/avatar.png"
     },
-    name: "Hikari Homepage",
-    slogan: "Homepage powered by vue 3 && nuxt 3.",
+    name: "这里是 HikariLan 贺兰星辰😀",
+    slogan: "一个普通的学生，业余开发者，业余-业余运维，喜欢折腾新事物",
     socialMedia: [
         {
+            name: "主页",
+            url: "#"
+        },
+        {
+            name: "博客",
+            url: "https://my.minecraft.kim"
+        },
+        {
+            name: "QQ",
+            url: "tencent://message/?uin=2191023046"
+        },
+        {
+            name: "电子邮件",
+            url: "mailto:shaokeyibb@126.com"
+        },
+        {
+            name: "知乎",
+            url: "https://www.zhihu.com/people/shaokeyibb"
+        },
+        {
+            name: "B站",
+            url: "https://space.bilibili.com/29367276"
+        },
+        {
             name: "GitHub",
-            url: "https://github.com/shaokeyibb/hikari_homepage"
-        }
+            url: "https://github.com/shaokeyibb"
+        },
     ],
     footerHtml: `
-     <p>©2023 Hikari Homepage. | 
-     Project is licensed under the 
-     <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPLv3 License</a>. | 
-     GitHub: <a href="https://github.com/shaokeyibb/hikari_homepage">hikari_homepage</a>
-     </p>
+     ©2023 HikariLan's Homepage. All Rights Reserved. <strong><a href='https://beian.miit.gov.cn/' target='_blank'>陕ICP备2020016655号-1</a></strong> 
+     Powered by <a href="https://github.com/shaokeyibb/hikari_homepage">hikari_homepage</a> project. 
+     Background image by <a href="https://www.loliapi.com">Loli API</a>. 
     `
 }
 
@@ -152,10 +169,10 @@ export const head = {
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
     ],
     link: [
-        {rel: 'icon', href: '/icon.png'}
+        {rel: 'icon', href: 'https://my.minecraft.kim/avatar.png'}
     ],
     htmlAttrs: {
-        lang: 'en'
+        lang: 'zh'
     }
 }
 
