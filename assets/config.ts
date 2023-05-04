@@ -53,7 +53,7 @@ export const config: Config = {
         },
         {
             name: "电子邮件",
-            url: "mailto:shaokeyibb@126.com"
+            url: "mailto:hikarilan@minecraft.kim"
         },
         {
             name: "知乎",
