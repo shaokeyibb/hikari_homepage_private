@@ -40,8 +40,8 @@ export const config: Config = {
     slogan: "一个普通的学生，业余开发者，业余-业余运维，喜欢折腾新事物",
     socialMedia: [
         {
-            name: "主页",
-            url: "#"
+            name: "简历",
+            url: "https://cv.minecraft.kim"
         },
         {
             name: "博客",
