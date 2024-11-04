@@ -37,7 +37,7 @@ export const config: Config = {
         value: "https://my.minecraft.kim/avatar.png"
     },
     name: "这里是 HikariLan 贺兰星辰😀",
-    slogan: "一个普通的学生，业余开发者，业余-业余运维，喜欢折腾新事物",
+    slogan: "一个普通的学生，业余开发者，热爱开源，喜欢折腾新事物",
     socialMedia: [
         {
             name: "简历",
@@ -56,12 +56,8 @@ export const config: Config = {
             url: "mailto:hikarilan@minecraft.kim"
         },
         {
-            name: "知乎",
-            url: "https://www.zhihu.com/people/shaokeyibb"
-        },
-        {
-            name: "B站",
-            url: "https://space.bilibili.com/29367276"
+            name: "V2EX",
+            url: "https://v2ex.com/member/HikariLan"
         },
         {
             name: "GitHub",
