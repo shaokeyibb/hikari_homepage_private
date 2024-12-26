@@ -56,13 +56,17 @@ export const config: Config = {
             url: "mailto:hikarilan@minecraft.kim"
         },
         {
+            name: "GitHub",
+            url: "https://github.com/shaokeyibb"
+        },
+        {
             name: "V2EX",
             url: "https://v2ex.com/member/HikariLan"
         },
         {
-            name: "GitHub",
-            url: "https://github.com/shaokeyibb"
-        },
+            name: "牛客",
+            url: "https://www.nowcoder.com/users/411132126"
+        }
     ],
     footerHtml: `
      ©2023 HikariLan's Homepage. All Rights Reserved. <strong><a href='https://beian.miit.gov.cn/' target='_blank'>陕ICP备2020016655号-1</a></strong> 
