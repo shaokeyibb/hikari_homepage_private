@@ -1,7 +1,7 @@
 export const config: Config = {
     title: "HikariLan 贺兰星辰的个人主页",
     description: "HikariLan 贺兰星辰的个人主页",
-    keywords: "贺兰星辰,HikariLan,shaokeyibb,贺兰兰,minecraft.kim",
+    keywords: "贺兰星辰,HikariLan,shaokeyibb,贺兰兰",
     background: {
         // @See: https://developer.mozilla.org/en-US/docs/Web/CSS/background
         color: {
@@ -34,18 +34,18 @@ export const config: Config = {
     borderRadius: '10px',
     avatar: {
         type: "url",
-        value: "https://my.minecraft.kim/avatar.png"
+        value: "https://assets.hikarilan.life/avatar.png"
     },
     name: "这里是 HikariLan 贺兰星辰😀",
     slogan: "一个普通的学生，业余开发者，热爱开源，喜欢折腾新事物",
     socialMedia: [
         {
             name: "简历",
-            url: "https://cv.minecraft.kim"
+            url: "https://cv.hikarilan.life"
         },
         {
             name: "博客",
-            url: "https://my.minecraft.kim"
+            url: "https://blog.hikarilan.life"
         },
         {
             name: "QQ",
@@ -53,7 +53,7 @@ export const config: Config = {
         },
         {
             name: "电子邮件",
-            url: "mailto:hikarilan@minecraft.kim"
+            url: "mailto:i@hikarilan.life"
         },
         {
             name: "GitHub",
@@ -68,6 +68,9 @@ export const config: Config = {
             url: "https://www.nowcoder.com/users/411132126"
         }
     ],
+    headerHtml: `
+    公告：本站点正将主域名由 minecraft.kim 迁移至 hikarilan.life，请各位用户注意修改书签和链接。
+    `,
     footerHtml: `
      ©2023 HikariLan's Homepage. All Rights Reserved. <strong><a href='https://beian.miit.gov.cn/' target='_blank'>陕ICP备2020016655号-1</a></strong> 
      Powered by <a href="https://github.com/shaokeyibb/hikari_homepage">hikari_homepage</a> project. 
@@ -169,7 +172,7 @@ export const head = {
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
     ],
     link: [
-        {rel: 'icon', href: 'https://my.minecraft.kim/avatar.png'}
+        {rel: 'icon', href: 'https://assets.hikarilan.life/avatar.png'}
     ],
     htmlAttrs: {
         lang: 'zh'
