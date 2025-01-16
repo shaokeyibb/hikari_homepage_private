@@ -72,7 +72,7 @@ export const config: Config = {
     公告：本站点正将主域名由 minecraft.kim 迁移至 hikarilan.life，请各位用户注意修改书签和链接。
     `,
     footerHtml: `
-     ©2023 HikariLan's Homepage. All Rights Reserved. <strong><a href='https://beian.miit.gov.cn/' target='_blank'>陕ICP备2020016655号-1</a></strong> 
+     ©${new Date().getFullYear()} HikariLan's Homepage. All Rights Reserved. <strong><a href='https://beian.miit.gov.cn/' target='_blank'>陕ICP备2020016655号-4</a></strong> 
      Powered by <a href="https://github.com/shaokeyibb/hikari_homepage">hikari_homepage</a> project. 
      Background image by <a href="https://www.loliapi.com">Loli API</a>. 
     `
