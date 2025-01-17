@@ -172,7 +172,7 @@ export const head = {
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
     ],
     link: [
-        {rel: 'icon', href: 'https://assets.hikarilan.life/avatar.png'}
+        {rel: 'icon', href: 'https://assets.hikarilan.life/favicon.png'}
     ],
     htmlAttrs: {
         lang: 'zh'
