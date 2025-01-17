@@ -170,6 +170,7 @@ export const head = {
         {name: 'description', content: config.description},
         {name: 'charset', content: 'utf-8'},
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+        {name: 'baidu-site-verification', content: 'codeva-LCnDgQzqz7'}
     ],
     link: [
         {rel: 'icon', href: 'https://assets.hikarilan.life/favicon.png'}
