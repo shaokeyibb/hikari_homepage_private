@@ -164,7 +164,7 @@ declare type Config = {
 }
 
 // @See: https://nuxt.com/docs/getting-started/seo-meta#usehead
-export const head = {
+export const head: Parameters<typeof useHead>[0] = {
     title: config.title,
     meta: [
         {name: 'description', content: config.description},
@@ -177,7 +177,23 @@ export const head = {
     ],
     htmlAttrs: {
         lang: 'zh'
-    }
+    },
+    script: [
+        // schema.org
+        {
+            type: "application/ld+json",
+            innerHTML: `
+              {
+                "@context": "https://schema.org/",
+                "@type": "Person",
+                "name": "HikariLan贺兰星辰",
+                "url": "https://hikarilan.life",
+                "image": "https://assets.hikarilan.life/avatar.png",
+                "sameAs": [${config.socialMedia!.filter(item => item.url.startsWith("https://")).map(item => `"${item.url}"`).join(",")}]  
+              }
+            `.trim()
+        }
+    ]
 }
 
 // @See: https://nuxt.com/docs/getting-started/seo-meta#useseometa
