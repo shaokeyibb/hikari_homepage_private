@@ -185,11 +185,17 @@ export const head: Parameters<typeof useHead>[0] = {
             innerHTML: `
               {
                 "@context": "https://schema.org/",
-                "@type": "Person",
-                "name": "HikariLan贺兰星辰",
-                "url": "https://hikarilan.life",
-                "image": "https://assets.hikarilan.life/avatar.png",
-                "sameAs": [${config.socialMedia!.filter(item => item.url.startsWith("https://")).map(item => `"${item.url}"`).join(",")}]  
+                "@type": "ProfilePage",
+                "mainEntity": {
+                  "@id": "#main-author",
+                  "@type": "Person",
+                  "name": "HikariLan",
+                  "alternateName": "贺兰星辰",
+                  "description": "${config.slogan}",
+                  "identifier": "HikariLan",
+                  "image": "https://assets.hikarilan.life/avatar.png",
+                  "sameAs": [${config.socialMedia!.filter(item => item.url.startsWith("https://")).map(item => `"${item.url}"`).join(",")}]  
+                }
               }
             `.trim()
         }
