@@ -37,7 +37,7 @@ export const config: Config = {
         value: "https://assets.hikarilan.life/avatar.png"
     },
     name: "这里是 HikariLan 贺兰星辰😀",
-    slogan: "一个普通的学生，业余开发者，热爱开源，喜欢折腾新事物",
+    slogan: "半栈工程师 | 非科班转码 | 开源爱好者 | 欢迎跟我聊天！",
     socialMedia: [
         {
             name: "简历",
