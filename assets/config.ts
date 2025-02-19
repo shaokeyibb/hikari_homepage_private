@@ -1,6 +1,5 @@
 export const config: Config = {
     title: "HikariLan 贺兰星辰的个人主页",
-    description: "HikariLan 贺兰星辰的个人主页",
     keywords: "贺兰星辰,HikariLan,shaokeyibb,贺兰兰",
     background: {
         // @See: https://developer.mozilla.org/en-US/docs/Web/CSS/background
@@ -80,7 +79,6 @@ export const config: Config = {
 
 declare type Config = {
     title?: string,
-    description?: string,
     keywords?: string,
     background?: {
         color?: {
@@ -167,13 +165,13 @@ declare type Config = {
 export const head: Parameters<typeof useHead>[0] = {
     title: config.title,
     meta: [
-        {name: 'description', content: config.description},
+        {name: 'description', content: config.slogan},
         {name: 'charset', content: 'utf-8'},
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
         {name: 'baidu-site-verification', content: 'codeva-LCnDgQzqz7'},
         {property: 'og:site_name', content: config.title},
         {property: 'og:title', content: config.title},
-        {property: 'og:description', content: config.description},
+        {property: 'og:description', content: config.slogan},
         {property: 'og:type', content: 'profile'},
         {property: 'og:url', content: 'https://hikarilan.life'},
         {property: 'og:image', content: 'https://assets.hikarilan.life/avatar.png'},
@@ -214,6 +212,6 @@ export const head: Parameters<typeof useHead>[0] = {
 // @See: https://nuxt.com/docs/getting-started/seo-meta#useseometa
 export const seoMeta = {
     title: config.title,
-    description: config.description,
+    description: config.slogan,
     keywords: config.keywords
 }
