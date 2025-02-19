@@ -170,7 +170,16 @@ export const head: Parameters<typeof useHead>[0] = {
         {name: 'description', content: config.description},
         {name: 'charset', content: 'utf-8'},
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-        {name: 'baidu-site-verification', content: 'codeva-LCnDgQzqz7'}
+        {name: 'baidu-site-verification', content: 'codeva-LCnDgQzqz7'},
+        {property: 'og:site_name', content: config.title},
+        {property: 'og:title', content: config.title},
+        {property: 'og:description', content: config.description},
+        {property: 'og:type', content: 'profile'},
+        {property: 'og:url', content: 'https://hikarilan.life'},
+        {property: 'og:image', content: 'https://assets.hikarilan.life/avatar.png'},
+        {property: 'og:locale', content: 'zh_CN'},
+        {property: 'og:profile:username', content: 'HikariLan贺兰星辰'},
+        {property: 'og:gender', content: 'male'}
     ],
     link: [
         {rel: 'icon', href: 'https://assets.hikarilan.life/favicon.png'}
