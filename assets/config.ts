@@ -180,7 +180,8 @@ export const head: Parameters<typeof useHead>[0] = {
         {property: 'og:gender', content: 'male'}
     ],
     link: [
-        {rel: 'icon', href: 'https://assets.hikarilan.life/favicon.png'}
+        {rel: 'icon', href: 'https://assets.hikarilan.life/favicon.png'},
+        {rel: 'canonical', href: 'https://hikarilan.life'}
     ],
     htmlAttrs: {
         lang: 'zh'
