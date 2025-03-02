@@ -168,7 +168,7 @@ export const head: Parameters<typeof useHead>[0] = {
         {name: 'description', content: config.slogan},
         {name: 'charset', content: 'utf-8'},
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-        {name: 'baidu-site-verification', content: 'codeva-LCnDgQzqz7'},
+        {name: 'baidu-site-verification', content: 'codeva-5Dmlb6PzVL'},
         {property: 'og:site_name', content: config.title},
         {property: 'og:title', content: config.title},
         {property: 'og:description', content: config.slogan},
