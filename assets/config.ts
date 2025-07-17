@@ -59,17 +59,18 @@ export const config: Config = {
             url: "https://github.com/shaokeyibb"
         },
         {
-            name: "V2EX",
-            url: "https://v2ex.com/member/HikariLan"
+            name: "Bilibili",
+            url: "https://space.bilibili.com/29367276"
+        },
+        {
+            name: "LINUX DO",
+            url: "https://linux.do/u/hikarilan"
         },
         {
             name: "牛客",
             url: "https://www.nowcoder.com/users/411132126"
         }
     ],
-    headerHtml: `
-    公告：本站点正将主域名由 minecraft.kim 迁移至 hikarilan.life，请各位用户注意修改书签和链接。
-    `,
     footerHtml: `
      ©${new Date().getFullYear()} HikariLan's Homepage. All Rights Reserved. <strong><a href='https://beian.miit.gov.cn/' target='_blank'>陕ICP备2020016655号-4</a></strong> 
      Powered by <a href="https://github.com/shaokeyibb/hikari_homepage">hikari_homepage</a> project. 
