@@ -47,10 +47,6 @@ export const config: Config = {
             url: "https://blog.hikarilan.life"
         },
         {
-            name: "QQ",
-            url: "tencent://message/?uin=2191023046"
-        },
-        {
             name: "电子邮件",
             url: "mailto:i@hikarilan.life"
         },
@@ -61,6 +57,10 @@ export const config: Config = {
         {
             name: "Bilibili",
             url: "https://space.bilibili.com/29367276"
+        },
+        {
+            name: "小红书",
+            url: "https://www.xiaohongshu.com/user/profile/6217cddb000000002102467a"
         },
         {
             name: "LINUX DO",
