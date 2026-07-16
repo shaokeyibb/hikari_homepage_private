@@ -10,6 +10,20 @@ export type SocialLink = {
   glyph?: string;
 };
 
+export type EducationItem = {
+  school: string;
+  major: string;
+  period: string;
+  icon: string;
+};
+
+export type ExperienceItem = {
+  company: string;
+  role: string;
+  period: string;
+  current?: boolean;
+};
+
 export const site = {
   // ---- Identity ----
   name: "贺兰星辰",
@@ -31,7 +45,6 @@ export const site = {
 
   // ---- Social links ----
   socialMedia: [
-    { name: "简历", url: "https://cv.hikarilan.life", icon: "ph:file-text-bold" },
     { name: "博客", url: "https://blog.hikarilan.life", icon: "ph:pen-nib-bold" },
     { name: "电子邮件", url: "mailto:i@hikarilan.life", icon: "ph:envelope-simple-bold" },
     { name: "GitHub", url: "https://github.com/shaokeyibb", icon: "simple-icons:github" },
@@ -44,6 +57,29 @@ export const site = {
     { name: "LINUX DO", url: "https://linux.do/u/hikarilan", icon: "simple-icons:linux", glyph: "LD" },
     { name: "牛客", url: "https://www.nowcoder.com/users/411132126", glyph: "牛" },
   ] as SocialLink[],
+
+  // ---- Résumé (履历) ----
+  education: [
+    {
+      school: "西安财经大学",
+      major: "金融学",
+      period: "2021.9 - 2025.7",
+      icon: "ph:graduation-cap-bold",
+    },
+  ] as EducationItem[],
+  experience: [
+    {
+      company: "腾讯 Tencent",
+      role: "测试开发工程师 (SDET)",
+      period: "2026.6 - 至今",
+      current: true,
+    },
+    {
+      company: "滴滴 Didi Global",
+      role: "测试开发工程师 (SDET)",
+      period: "2025.7 - 2026.5",
+    },
+  ] as ExperienceItem[],
 
   // ---- Footer ----
   icp: {

@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative z-10 flex min-h-dvh flex-col items-center justify-center gap-8 px-6 py-24 text-center"
+    class="relative z-10 flex flex-1 flex-col items-center justify-center gap-8 px-6 py-20 text-center"
   >
     <HeroAvatar
       class="stagger"

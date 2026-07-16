@@ -106,7 +106,7 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Staggered entrance helpers */
@@ -147,6 +147,16 @@ body {
   .stagger {
     opacity: 1;
   }
+}
+
+/* Hide the native scrollbar (custom page indicator replaces it) */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 /* Custom focus ring */

@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="fixed inset-x-0 bottom-0 z-10 px-4 py-4 text-center text-xs leading-relaxed text-star-dim/60"
+    class="relative z-10 mt-auto px-4 py-6 text-center text-xs leading-relaxed text-star-dim/60"
   >
     <p class="mx-auto max-w-2xl">
       &copy;{{ year }} {{ site.name }}. All Rights Reserved.
