@@ -1,82 +1,63 @@
-# Hikari Homepage
+# 贺兰星辰 · HikariLan — Personal Homepage
 
-Homepage powered by vue 3 && nuxt 3.
+A bespoke, single-screen **deep-space starfield** homepage for 贺兰星辰 (HikariLan), playing on the
+meaning of the name — 星辰 (stars) and 光 / Hikari (light).
+
+Built with **Nuxt 4 + Vue 3.5 + Tailwind CSS v4**, statically generated and deployed to GitHub Pages.
 
 ![screenshot](docs/screenshot.jpeg)
 
-## Build, Setup && Deploy
-1. Run `yarn install` to install dependencies.
-2. Go to `./assets/config.ts` to see configurations of your homepage, just change `config` object.
-3. Run `yarn generate` to build the project with a pre-rendering.
-4. Copy `./.output/public` to your web server.
-5. Enjoy it!
+## Tech stack
 
-Example configuration: 
-```typescript
-export const config: Config = {
-    title: "Hikari Homepage",
-    description: "Homepage powered by vue 3 && nuxt 3.",
-    keywords: "homepage, vue, nuxt",
-    background: {
-        // @See: https://developer.mozilla.org/en-US/docs/Web/CSS/background
-        color: {
-            type: "linear-gradient",
-            value: "#f12711, #f5af19"
-        },
-        // @See: https://developer.mozilla.org/en-US/docs/Web/CSS/filter
-        filter: {
-            opacity: "80%",
-            blur: "10px"
-        }
-    },
-    panel: {
-        filter: {
-            blur: "20px",
-            contrast: "1.5"
-        },
-        shadow: {
-            offsetX: "0",
-            offsetY: "0",
-            blurRadius: "50px",
-            color: "rgba(0 0 0/ 25%)",
-        }
-    },
-    theme: {
-        primaryColor: "#00b894",
-        secondaryColor: "#f5af19",
-        surfaceColor: "rgba(255,255,255,0.3)",
-        onSurfaceTextColor: "#000",
-        headerColor: "rgba(0,0,0, 0.4)",
-        onHeaderTextColor: "#FFF",
-        footerColor: "rgba(0,0,0, 0.4)",
-        onFooterTextColor: "#FFF",
-    },
-    borderRadius: '10px',
-    avatar: {
-        type: "url",
-        value: "/icon.png"
-    },
-    name: "Hikari Homepage",
-    slogan: "Homepage powered by vue 3 && nuxt 3.",
-    socialMedia: [
-        {
-            name: "GitHub",
-            url: "https://github.com/shaokeyibb/hikari_homepage"
-        }
-    ],
-    footerHtml: `
-     <p>©2023 Hikari Homepage. | 
-     Project is licensed under the 
-     <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPLv3 License</a>. | 
-     GitHub: <a href="https://github.com/shaokeyibb/hikari_homepage">hikari_homepage</a>
-     </p>
-    `
-}
+- [Nuxt 4](https://nuxt.com) (SSG via `nuxt generate`, `ssr: true`)
+- [Vue 3.5](https://vuejs.org)
+- [Tailwind CSS v4](https://tailwindcss.com) via the `@tailwindcss/vite` plugin (CSS-first config)
+- [@nuxt/icon](https://github.com/nuxt/icon) for brand/UI icons
+- [@nuxt/fonts](https://github.com/nuxt/fonts) for the display typeface (Space Grotesk / Sora)
+- [@vueuse/nuxt](https://vueuse.org) for reduced-motion and pointer parallax
+
+## Project layout
+
 ```
+app/
+  app.vue                       # root: SEO (useHead/useSeoMeta + JSON-LD) + layout
+  site.ts                       # single source of truth (identity, links, SEO strings)
+  assets/css/main.css           # Tailwind import + deep-space theme tokens + keyframes
+  components/
+    CosmicBackdrop.vue          # nebula/aurora blobs, orbital rings, mouse parallax
+    StarfieldCanvas.client.vue  # animated twinkling starfield + shooting stars (canvas)
+    HeroCard.vue                # avatar + name + slogan
+    HeroAvatar.vue              # glowing avatar halo + rotating ring
+    SocialLinks.vue             # glassmorphic social pill buttons
+    SiteFooter.vue              # copyright + ICP filing
+public/                         # SEO assets: robots.txt, sitemap.xml, edgeone.json, verifications
+```
+
+All content lives in [`app/site.ts`](app/site.ts); the SEO strings there are kept in sync with what
+is rendered on the page.
+
+## Develop, build & deploy
+
+```bash
+yarn install     # install dependencies
+yarn dev         # local dev server
+yarn generate    # static generate into .output/public
+yarn preview     # preview the generated output
+```
+
+Deployment is automated via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml): every push
+to `master` runs `yarn generate` and publishes `.output/public` to GitHub Pages
+(custom domain `hikarilan.life`).
+
+## Accessibility
+
+`prefers-reduced-motion` is honored throughout: the starfield renders a single static frame, parallax
+is disabled, and CSS animations/transitions are collapsed. All interactive elements have visible focus
+rings.
 
 ## License
 
-Hikari Homepage is licensed under a [AGPL-3.0 License](LICENSE).
+Licensed under the [AGPL-3.0 License](LICENSE).
 
 ```
     Hikari Homepage
