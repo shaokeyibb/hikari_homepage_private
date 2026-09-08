@@ -38,6 +38,8 @@ is rendered on the page.
 
 ## Develop, build & deploy
 
+Requires Node.js 22.19+ (22.x), 24.11+ (24.x), or 26+, and the Yarn version pinned in `package.json` (via Corepack).
+
 ```bash
 yarn install     # install dependencies
 yarn dev         # local dev server
